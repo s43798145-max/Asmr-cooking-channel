@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Virtual Studio</title>
+  <style>
+    /* Reset default margins/padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Diagonal background 45 degrees */
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #556B2F 50%, #FFF8DC 50%);
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    /* All text - Buttery Yellow */
+    h1, .text-yellow, .text-yellow-2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #FFD87C; /* Buttery Yellow */
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .text-yellow {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .text-yellow-2 {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    /* Subscribe button */
+    .subscribe-btn {
+      background-color: #FF0000; /* Red */
+      color: #fff;
+      font-size: 1.3em;
+      padding: 15px 35px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+    }
+
+    .subscribe-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      body {
+        background: linear-gradient(to bottom, #556B2F 50%, #dbb418 50%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Welcome to My Youtube channel</h1>
+    <h1 class="text-yellow">Mss Kitchenasmr</h1>
+    <p class="text-yellow-2">Click the button to subscribe to my YouTube channel!</p>
+    <a class="subscribe-btn" href="https://www.youtube.com/@msskitchen-g6z?si=WEftNfLZLRpRr-hh" target="_blank">Subscribe</a>
+  </div>
+
+</body>
+</html>
